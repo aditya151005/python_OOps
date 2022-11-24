@@ -7,10 +7,12 @@
 # class is the blueprint of the object.
 # creating the class-
 class Computer:
+    def __init__(self):#special method
+        print("in init")    
     def config(self):
         print("i5,16gb,1TB")
-com1=Computer()
-com2=Computer()
+com1=Computer() #in init
+com2=Computer() #in init
 print(type(com1)) #<class '__main__.Computer'>
 Computer.config(com1) #i5,16gb,1TB
 Computer.config(com2) #i5,16gb,1TB
